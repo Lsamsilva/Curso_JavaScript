@@ -1,5 +1,3 @@
-<img src="C:\Users\Leila\Pictures\Logos\JS_red.png" style="zoom:25%;" />
-
 **Curso de JavaScript **  
 
 _Curso em Vídeo - 10h_
