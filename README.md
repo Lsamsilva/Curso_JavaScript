@@ -1,4 +1,4 @@
-**Curso de JavaScript **  
+__Curso de JavaScript__  
 
 _Curso em Vídeo - 10h_
 
