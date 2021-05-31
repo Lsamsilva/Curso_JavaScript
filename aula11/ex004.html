@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <p>Saiba se você é brasileiro ou estrangeiro.</p>
+    <p>
+        País atual: 
+        <input id="txtnac"> <!--Input para 'caixa'-->
+        <input type="button" value="verificar" onclick="verificarnac()"> <!--Input para o botão-->
+        <p id="res"></p> <!--Parágrafo que mostrará o resultado-->
+    </p>
+    <script>
+        function verificarnac (){
+            var caixa = document.getElementById('txtnac') 
+            var nacionalidade = txtnac.value
+            var res = document.getElementById('res')
+            if (nacionalidade == 'brasil' || nacionalidade == 'Brasil'){
+                res.innerHTML = 'Você é brasileiro.'
+            }else{
+                res.innerHTML = 'Você é estrangeiro.'
+            }
+        }
+    </script>
+</body>
+</html>
