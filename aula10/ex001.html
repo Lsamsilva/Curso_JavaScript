@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 22pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja ...
+    </div>
+    <p>Utilizando tag HTML</p>
+    <script>
+        function clicar() {
+            var a = document.getElementById('area') /*A var a poderia ser colocada para fora da função, desta forma poderia ser repetida mais de uma vez em outras funções, contudo poderia causar um problema de Escopo - uso da memória. Não é indicado pelo que entendi. FORA = ESCOPO GLOBAL  DENTRO = ESCOPO LOCAL */
+            a.innerText = 'Clicou!'
+            a.style.background='red'
+        }
+        function entrar(){
+            var b = document.getElementById('area')
+            b.innerText='Mouse Entrou!'
+            b.style.background='yellow'
+            b.style.color='black'
+        }
+        function sair(){
+            var c = document.getElementById('area')
+            c.innerText='Mouse Saiu!'
+            c.style.background='yellow'
+            c.style.color='black'
+        }
+    </script>
+</body>
+</html>

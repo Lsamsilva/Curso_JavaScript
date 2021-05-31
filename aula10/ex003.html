@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial            
+        }
+        h1{
+            color: red;
+        }
+        div{
+            color: salmon;
+            margin-top: 20px;
+        }
+        input{
+            font: normal 15pt Arial;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()"> 
+    <hr>
+    <div id="res">Resultado da Soma</div>
+    <script>
+        function somar(){
+            /*Tanto a var tn1, quando a var tn2 recebem o que está nas "caixas" criadas; que são valores de Texto, não de número. É necessário criar outras variáveis para que tenham valor numérico e assim efetuar a soma.*/
+            var tn1 = document.getElementById('txtn1') 
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number.parseInt(tn1.value) //Utilizando o parseInt força-se o valor digitado na primeira caisa a ser inteiro, mesmo se o usuário digitar número real não-inteiro. Utilizando somente Number, sem o .parseInt há a detecção automática do tipo numérico: Inteiro ou Real.
+            var n2 = Number(tn2.value)
+            // Pode-se usar tanto Number.parseInt quanto somente Number
+            var s = n1 + n2
+            res.innerHTML = `A Soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+        }
+    </script>
+</body>
+</html>
