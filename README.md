@@ -18,7 +18,3 @@ _Exercícios Propostos:_
 - [x] Tabuada
 - [x] Analisador de Números
 
-
-
-![_Certificado:_] (<img src="C:\Users\Leila\Desktop\JS-certificado.PNG" alt="JS-certificado" style="zoom:50%;" />)
-
